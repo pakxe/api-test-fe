@@ -1,14 +1,10 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Login from '../pages/Login';
-import LoginSuccess from '../pages/LoginSuccess';
-import Redirection from '../pages/Redirection';
+import Home from '../pages/Home';
 
 const Router = () => (
   <BrowserRouter>
     <Routes>
-      <Route exact path='/' element={<Login />} />
-      <Route exact path='/kakao/callback' element={<Redirection />} />
-      <Route exact path='/loginSuccess' element={<LoginSuccess />} />
+      <Route path='/' element={<Home />} />
     </Routes>
   </BrowserRouter>
 );
